@@ -46,7 +46,15 @@ function loadSVG(id, filename) {
     });
 }
 
+// function inView(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
 
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
 
 // States
 
@@ -62,6 +70,8 @@ function loopfirstReady() {
 	loadSVG('#high', 'scores/high.svg');
 	loadSVG('#low', 'scores/low.svg');
 	loadSVG('#med', 'scores/med.svg');
+
+	// inView("#score-attr");
 }
 
 function loopfirstLoad() {
