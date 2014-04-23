@@ -14,8 +14,8 @@ function initStellar() {
 	$.stellar.positionProperty.css3transform = {
 		setPosition: function($el, x, startX, y, startY) {
 			var trans = 'matrix(1, 0, 0, 1, ' +
-				(x - startX) + ', ' +
-				(y - startY) + ')';
+			(x - startX) + ', ' +
+			(y - startY) + ')';
 
 			$el.css({
 				'transform': trans
@@ -38,22 +38,22 @@ function initStellar() {
 
 function loadSVG(id, filename) {
 	$(id).load('../shapes/' + filename,function(response){
-        $(this).addClass('svgLoaded');
-         
+		$(this).addClass('svgLoaded');
+
 		if(!response){
 			console.log('errored');
 		}
-    });
+	});
 }
 
 function inView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+	var elemTop = $(elem).offset().top;
+	var elemBottom = elemTop + $(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
 // States
@@ -71,7 +71,7 @@ function loopfirstReady() {
 	loadSVG('#low', 'scores/low.svg');
 	loadSVG('#med', 'scores/med.svg');
 
-	// inView("#score-attr");
+	inView('#score-attr');
 }
 
 function loopfirstLoad() {
