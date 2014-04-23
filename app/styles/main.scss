@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300);
@@ -18,30 +18,30 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 }
 
 /* General
 --------------------------- */
 
-body { 
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.4;
     font-weight: 200;
 
-    @media (min-width: 768px) { 
+    @media (min-width: 768px) {
         font-size: 18px;
     }
 }
@@ -84,16 +84,16 @@ h1, h2, h3, h4, h5, h6 {
         width: 177px;
         margin: 0 auto;
 
-        -webkit-transform: scale(0.6); 
-            -ms-transform: scale(0.6); 
-                transform: scale(0.6); 
+        -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+                transform: scale(0.6);
 
-        @media (min-width: 768px) { 
+        @media (min-width: 768px) {
             margin-bottom: 36px;
 
-            -webkit-transform: scale(1); 
-                -ms-transform: scale(1); 
-                    transform: scale(1); 
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1);
         }
 
     }
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 18px;
         left: 0;
         right: 0;
-        
+
         a { color: #fff; }
     }
 
@@ -136,13 +136,13 @@ section.info {
     padding: 36px 0;
     border: 1px solid #ccc;
 
-    @media (min-width: 768px) { 
+    @media (min-width: 768px) {
         padding: 108px 0;
     }
 
     img {
         max-width: 100%;
-        margin-bottom: 36px; 
+        margin-bottom: 36px;
         vertical-align: middle;
 
         &[src*=kitten] {
@@ -160,17 +160,17 @@ section.info {
             padding: 0 20px;
             text-align: center;
 
-            @media (min-width: 768px) { 
+            @media (min-width: 768px) {
                 padding: 0;
                 text-align: left;
 
                 display: table-cell;
                 vertical-align: middle;
             }
-        } 
+        }
     }
 
-   
+
 
     h2 {
         width: 100%;
@@ -178,11 +178,11 @@ section.info {
         font-size: 24px;
         line-height: 1.2;
 
-        @media (min-width: 768px) { 
+        @media (min-width: 768px) {
             font-size: 1.9em;
         }
 
-        @media (min-width: 1200px) { 
+        @media (min-width: 1200px) {
             font-size: 2.2em;
         }
     }
@@ -192,7 +192,7 @@ section.info {
         line-height: 1.4;
         font-size: 16px;
 
-        @media (min-width: 768px) { 
+        @media (min-width: 768px) {
             font-size: 20px;
         }
     }
@@ -200,7 +200,7 @@ section.info {
 }
 
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
     // section.info.img-left {
     //     img {
