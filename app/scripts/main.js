@@ -2,11 +2,25 @@
 
 // Functions
 
-function startTour() {
-	$('#more').click(function (e) {
-		$.scrollTo('#timeline', 400);
-		e.preventDefault();
-	});
+function tourNav() {
+
+	function navTo(link,target) {
+
+		$(link).click(function (e) {
+			var offsetVal =
+				Math.abs(
+					$(window).height() - (
+						$(target).height() + $(target).css('padding-top').replace('px','')*2
+					)
+				)/-2;
+
+			$.scrollTo(target, 600, { offset: offsetVal });
+			e.preventDefault();
+		});
+
+	}
+
+	navTo('#more', '#timeline');
 }
 
 function initStellar() {
@@ -46,14 +60,11 @@ function loadSVG(id, filename) {
 	});
 }
 
-function inView(elem) {
-	var docViewTop = $(window).scrollTop();
-	var docViewBottom = docViewTop + $(window).height();
+function svgInView(){
+	$('#score-anim').waypoint(function() {
+		$(this).addClass('start');
 
-	var elemTop = $(elem).offset().top;
-	var elemBottom = elemTop + $(elem).height();
-
-	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}, { offset: $(window).height()/2, triggerOnce: true });
 }
 
 // States
@@ -63,7 +74,7 @@ function loopfirstResize() {
 }
 
 function loopfirstReady() {
-	startTour();
+	tourNav();
 	initStellar();
 	loopfirstResize();
 
@@ -71,7 +82,7 @@ function loopfirstReady() {
 	loadSVG('#low', 'scores/low.svg');
 	loadSVG('#med', 'scores/med.svg');
 
-	inView('#score-attr');
+	svgInView();
 }
 
 function loopfirstLoad() {
@@ -83,3 +94,4 @@ function loopfirstLoad() {
 $(document).ready(loopfirstReady);
 $(document).load(loopfirstLoad);
 $(window).resize(loopfirstResize);
+

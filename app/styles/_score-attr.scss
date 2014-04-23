@@ -23,6 +23,11 @@
 		font-family: 'Open Sans', sans-serif !important;
 		font-weight: 300 !important;
 	}
+
+	#attr003 > g,
+	#graph003  {
+		opacity: 0;
+	}
 }
 
 #score-anim.start {
