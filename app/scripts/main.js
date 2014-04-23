@@ -38,23 +38,23 @@ function initStellar() {
 
 function loadSVG(id, filename) {
 	$(id).load('../shapes/' + filename,function(response){
-        $(this).addClass("svgLoaded");
+        $(this).addClass('svgLoaded');
          
-        if(!response){
-            console.log('errored');
-        }
+		if(!response){
+			console.log('errored');
+		}
     });
 }
 
-// function inView(elem) {
-//     var docViewTop = $(window).scrollTop();
-//     var docViewBottom = docViewTop + $(window).height();
+function inView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
 
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
 
-//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-// }
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
 
 // States
 
