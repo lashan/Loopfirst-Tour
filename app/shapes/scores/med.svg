@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="350px" viewBox="0 0 500 350" enable-background="new 0 0 500 350" xml:space="preserve">
+<g id="attr002">
+	<g id="cost002">
+		<text transform="matrix(1 0 0 1 446.2324 119.3398)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">8</text>
+		<text transform="matrix(1 0 0 1 278.7441 119.3398)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">Cost</text>
+	</g>
+	<g id="cleanliness002">
+		<text transform="matrix(1 0 0 1 446.2324 154.3145)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">3</text>
+		<text transform="matrix(1 0 0 1 278.7441 154.3145)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">Cleanliness</text>
+	</g>
+	<g id="taste002">
+		<text transform="matrix(1 0 0 1 446.2324 189.2891)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">9</text>
+		<text transform="matrix(1 0 0 1 278.7441 189.2891)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">Taste</text>
+	</g>
+	<g id="convenience002">
+		<text transform="matrix(1 0 0 1 446.2324 224.2627)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">5</text>
+		<text transform="matrix(1 0 0 1 278.7441 224.2627)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">Convenience</text>
+	</g>
+	<g id="service002">
+		<text transform="matrix(1 0 0 1 446.2324 259.2383)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">2</text>
+		<text transform="matrix(1 0 0 1 278.7441 259.2383)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="23.1972">Service</text>
+	</g>
+</g>
+<g id="graph002">
+	<path id="graphbg002" fill="#E5E5E5" d="M133.064,123.978c31.947,0,57.938,25.969,57.938,57.889
+		c0,31.92-25.991,57.888-57.938,57.888c-31.947,0-57.938-25.968-57.938-57.888S101.117,123.978,133.064,123.978 M133.064,100.658
+		c-44.877,0-81.258,36.358-81.258,81.209c0,44.85,36.381,81.208,81.258,81.208s81.258-36.358,81.258-81.208
+		C214.323,137.017,177.942,100.658,133.064,100.658L133.064,100.658z"/>
+	<g id="fill002">
+		<defs>
+			<polyline id="fcirclemask002" points="130.941,170.901 130.941,76.468 189.583,115.601 224.38,179.684 194.898,256.018 
+				101.425,281.977 130.941,170.901 			"/>
+		</defs>
+		<clipPath id="fcirclemask002_1_">
+			<use xlink:href="#fcirclemask002"  overflow="visible"/>
+		</clipPath>
+		<path id="fcircle002" clip-path="url(#fcirclemask002_1_)" fill="#838B91" d="M133.064,123.978
+			c31.947,0,57.938,25.969,57.938,57.889c0,31.92-25.991,57.888-57.938,57.888c-31.947,0-57.938-25.968-57.938-57.888
+			S101.117,123.978,133.064,123.978 M133.064,100.658c-44.877,0-81.258,36.358-81.258,81.209c0,44.85,36.381,81.208,81.258,81.208
+			s81.258-36.358,81.258-81.208C214.323,137.017,177.942,100.658,133.064,100.658L133.064,100.658z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 104.853 197.3633)" fill="#3E474E" font-family="'OpenSans-Light'" font-size="40.9048">5.2</text>
+</g>
+</svg>
