@@ -15,13 +15,12 @@
 }
 
 #score-anim {
-	width: 500px;
-	height: 350px;
+	max-width: 500px;
+	max-height: 350px;
 	overflow: hidden;
 
-	text {
-		font-family: 'Open Sans', sans-serif !important;
-		font-weight: 300 !important;
+	svg {
+		width: 100%;
 	}
 
 	#attr003 > g,

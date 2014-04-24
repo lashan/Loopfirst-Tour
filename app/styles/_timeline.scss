@@ -1,0 +1,36 @@
+@-webkit-keyframes timelineanim {
+	0% 		{ -webkit-transform: translateX(0%) scale(1.8); } 		// 0s
+	20% 	{ -webkit-transform: translateX(0%) scale(1.8); } 		// 2s
+	60% 	{ -webkit-transform: translateX(-80%) scale(1.8); } 	// 6s
+	80% 	{ -webkit-transform: translateX(-80%) scale(1.8); } 	// 8s
+	100% 	{ -webkit-transform: translateX(0%) scale(1); } 		// 10s
+}
+
+#timeline-anim {
+	max-width: 500px;
+	min-height: 350px;
+	overflow: hidden;
+
+	svg {
+		width: 100%;
+	}
+
+	.wrap {
+		transform-origin: 0 175px;
+		-webkit-transform: translateY(0%);
+		-webkit-transform: translateX(0%) scale(1.8);
+		opacity: 0;
+		@include transition(all 0.2s ease);
+	}
+}
+
+#timeline-anim.start {
+
+	.wrap {
+
+		-webkit-animation: timelineanim 10s ease;
+		-webkit-animation-fill-mode: forwards;
+		opacity: 1;
+	}
+
+}

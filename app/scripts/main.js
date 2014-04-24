@@ -60,10 +60,9 @@ function loadSVG(id, filename) {
 	});
 }
 
-function svgInView(){
-	$('#score-anim').waypoint(function() {
+function svgInView(elem){
+	$(elem).waypoint(function() {
 		$(this).addClass('start');
-
 	}, { offset: $(window).height()/2, triggerOnce: true });
 }
 
@@ -82,7 +81,10 @@ function loopfirstReady() {
 	loadSVG('#low', 'scores/low.svg');
 	loadSVG('#med', 'scores/med.svg');
 
-	svgInView();
+	loadSVG('#timelinesvg', 'timeline/timeline.svg');
+
+	svgInView('#score-anim');
+	svgInView('#timeline-anim');
 }
 
 function loopfirstLoad() {
