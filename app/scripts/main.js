@@ -83,8 +83,11 @@ function loopfirstReady() {
 
 	loadSVG('#timelinesvg', 'timeline/timeline.svg');
 
+	loadSVG('#listsvg', 'lists/lists.svg');
+
 	svgInView('#score-anim');
 	svgInView('#timeline-anim');
+	svgInView('#lists-anim');
 }
 
 function loopfirstLoad() {

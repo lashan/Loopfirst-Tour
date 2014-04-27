@@ -1,9 +1,14 @@
 @-webkit-keyframes timelineanim {
-	0% 		{ -webkit-transform: translateX(0%) scale(1.8); } 		// 0s
-	20% 	{ -webkit-transform: translateX(0%) scale(1.8); } 		// 2s
-	60% 	{ -webkit-transform: translateX(-80%) scale(1.8); } 	// 6s
-	80% 	{ -webkit-transform: translateX(-80%) scale(1.8); } 	// 8s
-	100% 	{ -webkit-transform: translateX(0%) scale(1); } 		// 10s
+	0% 		{ -webkit-transform: translateX(0%) scale(1); }
+
+	20% 	{ -webkit-transform: translateX(0%) scale(1.8); }
+	25% 	{ -webkit-transform: translateX(0%) scale(1.8); }
+
+	60% 	{ -webkit-transform: translateX(-80%) scale(1.8); }
+	65% 	{ -webkit-transform: translateX(-80%) scale(1.8); }
+
+	85% 	{ -webkit-transform: translateX(0%) scale(1); }
+	100% 	{ -webkit-transform: translateX(0%) scale(1); }
 }
 
 #timeline-anim {
@@ -11,16 +16,13 @@
 	min-height: 350px;
 	overflow: hidden;
 
-	svg {
-		width: 100%;
-	}
+	svg { width: 100%; }
 
 	.wrap {
 		transform-origin: 0 175px;
-		-webkit-transform: translateY(0%);
-		-webkit-transform: translateX(0%) scale(1.8);
-		opacity: 0;
-		@include transition(all 0.2s ease);
+		-webkit-transform: translateY(0%) translateX(0%) scale(1);
+		// opacity: 0;
+		// @include transition(all 2s ease);
 	}
 }
 
@@ -28,9 +30,9 @@
 
 	.wrap {
 
-		-webkit-animation: timelineanim 10s ease;
+		-webkit-animation: timelineanim 5s ease;
 		-webkit-animation-fill-mode: forwards;
-		opacity: 1;
+		// opacity: 1;
 	}
 
 }
