@@ -14,7 +14,6 @@ var config = require('./lib/config/config');
 // Setup Express
 var app = express();
 require('./lib/config/express')(app);
-require('./lib/routes')(app);
 
 // Start server
 app.listen(config.port, config.ip, function () {
