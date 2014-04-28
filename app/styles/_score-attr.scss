@@ -1,17 +1,61 @@
-@-webkit-keyframes scoreanim {
-	0% 		{ -webkit-transform: translateY(0%); }
-	20% 	{ -webkit-transform: translateY(0%); }
+@keyframes color {
+	0% { opacity: 0.17 }
 
-	30% 	{ -webkit-transform: translateY(-33%); }
-	50% 	{ -webkit-transform: translateY(-33%); }
+	10% { opacity: 0.17 }
+	30% { opacity: 0.17 }
 
-	60% 	{ -webkit-transform: translateY(-66%); }
-	100% 	{ -webkit-transform: translateY(-66%); }
+	40% { opacity: 0.51 }
+	60% { opacity: 0.51 }
+
+	70% { opacity: 0.91 }
+	90% { opacity: 0.91 }
+
+	100% { opacity: 0.91; }
 }
 
-@-webkit-keyframes fade-in {
-	0% 		{ opacity: 0; }
-	100% 	{ opacity: 1; }
+@keyframes dash {
+	0% { stroke-dashoffset: 348 }
+
+	10% { stroke-dashoffset: 348 }
+	30% { stroke-dashoffset: 348 }
+
+	40% { stroke-dashoffset: 148  }
+	60% { stroke-dashoffset: 148  }
+
+	70% { stroke-dashoffset: 37  }
+	90% { stroke-dashoffset: 37  }
+
+	100% { stroke-dashoffset: 37 }
+}
+
+@keyframes score-numb {
+	0% { -webkit-transform: translateY(0%)  }
+
+	10% { -webkit-transform: translateY(0%)  }
+	30% { -webkit-transform: translateY(0%)  }
+
+	40% { -webkit-transform: translateY(-33%)   }
+	60% { -webkit-transform: translateY(-33%)   }
+
+	70% { -webkit-transform: translateY(-66%)   }
+	90% { -webkit-transform: translateY(-66%)   }
+
+	100% { -webkit-transform: translateY(-66%)  }
+}
+
+@keyframes score-attr {
+	0% { -webkit-transform: translateY(253px) translateX(155px)  }
+
+	10% { -webkit-transform: translateY(253px) translateX(155px)  }
+	30% { -webkit-transform: translateY(253px) translateX(155px)  }
+
+	40% { -webkit-transform: translateY(32%) translateX(155px)   }
+	60% { -webkit-transform: translateY(32%) translateX(155px)   }
+
+	70% { -webkit-transform: translateY(0%) translateX(155px)   }
+	90% { -webkit-transform: translateY(0%) translateX(155px)   }
+
+	100% { -webkit-transform: translateY(0%) translateX(155px)  }
 }
 
 #score-anim {
@@ -21,34 +65,39 @@
 
 	svg { width: 100%; }
 
-	#attr003 > g,
-	#graph003  {
-		opacity: 0;
+	.animate-score {
+		stroke-dasharray: 420;
+		stroke-dashoffset: 348;
+	}
+
+	#score-color {
+		opacity: 0.17;
+	}
+
+	#score-attrs001 {
+		-webkit-transform: translateY(253px) translateX(155px);
 	}
 }
+
 
 #score-anim.start {
-
-	.wrap {
-		-webkit-animation: scoreanim 18s ease;
-		-webkit-transform: translateY(0%);
-		-webkit-animation-fill-mode: forwards;
+	.animate-score {
+		-webkit-animation: dash 10s ease;
+		-webkit-animation-fill-mode: forwards !important;
 	}
 
-	#attr003 > g,
-	#graph003  {
-		opacity: 0;
-		-webkit-animation: fade-in 2s ease;
-		-webkit-animation-fill-mode: forwards;
+	#score-color {
+		-webkit-animation: color 10s ease;
+		-webkit-animation-fill-mode: forwards !important;
 	}
 
-	#graph003 					{ -webkit-animation-delay: 0.0s }
+	#score-number {
+		-webkit-animation: score-numb 10s ease;
+		-webkit-animation-fill-mode: forwards !important;
+	}
 
-	#attr003 > g:nth-child(1) 	{ -webkit-animation-delay: 0.1s }
-	#attr003 > g:nth-child(2) 	{ -webkit-animation-delay: 0.2s }
-	#attr003 > g:nth-child(3) 	{ -webkit-animation-delay: 0.3s }
-	#attr003 > g:nth-child(4) 	{ -webkit-animation-delay: 0.4s }
-	#attr003 > g:nth-child(5) 	{ -webkit-animation-delay: 0.5s }
+	#score-attrs001 {
+		-webkit-animation: score-attr 10s ease;
+		-webkit-animation-fill-mode: forwards !important;
+	}
 }
-
-

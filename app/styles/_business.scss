@@ -1,0 +1,28 @@
+@-webkit-keyframes fade-in {
+	0% 		{ opacity: 0; }
+	50% 	{ opacity: 1; }
+	100% 	{ opacity: 1; }
+}
+
+#business-anim {
+	width: 500px;
+	height: 350px;
+	overflow: hidden;
+
+	#poweredby001,
+	#loopfirst001 {
+		opacity: 0;
+		-webkit-animation-fill-mode: forwards !important;
+	}
+}
+
+
+#business-anim.start {
+	#poweredby001,
+	#loopfirst001 {
+		-webkit-animation: fade-in 2s ease;
+	}
+
+	#poweredby001 { -webkit-animation-delay: 0s; }
+	#loopfirst001 { -webkit-animation-delay: 1s; }
+}

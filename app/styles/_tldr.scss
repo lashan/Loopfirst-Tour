@@ -1,0 +1,40 @@
+@-webkit-keyframes longanim {
+	0% 		{  -webkit-transform: translateX(0%) }
+	100% 	{  -webkit-transform: translateX(100%) }
+}
+
+@-webkit-keyframes tldranim {
+	0% 		{  -webkit-transform: translateX(-100%) translateY(-100%) }
+	100% 	{  -webkit-transform: translateX(0%) translateY(-100%) }
+}
+
+#tldr-anim {
+	max-width: 500px;
+	max-height: 350px;
+	overflow: hidden;
+
+	#longsvg {
+		-webkit-animation-fill-mode: forwards !important;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#tldrsvg {
+		-webkit-transform: translateX(-100%) translateY(-100%);
+		-webkit-animation-fill-mode: forwards !important;
+		-webkit-animation-iteration-count: 1;
+	}
+
+}
+
+#tldr-anim.start {
+	#longsvg {
+		-webkit-animation: longanim 2s ease;
+		-webkit-animation-delay: 2s;
+
+	}
+
+	#tldrsvg {
+		-webkit-animation: tldranim 2s ease;
+		-webkit-animation-delay: 2s;
+	}
+}

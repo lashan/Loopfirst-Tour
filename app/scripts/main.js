@@ -60,10 +60,10 @@ function loadSVG(id, filename) {
 	});
 }
 
-function svgInView(elem){
+function svgInView(elem, offset){
 	$(elem).waypoint(function() {
 		$(this).addClass('start');
-	}, { offset: $(window).height()/2, triggerOnce: true });
+	}, { offset: $(window).height()/2 + offset, triggerOnce: true });
 }
 
 // States
@@ -77,17 +77,30 @@ function loopfirstReady() {
 	initStellar();
 	loopfirstResize();
 
-	loadSVG('#high', 'scores/high.svg');
-	loadSVG('#low', 'scores/low.svg');
-	loadSVG('#med', 'scores/med.svg');
+
+	/* Loading SVGs */
+	// loadSVG('#high', 'scores/high.svg');
+	// loadSVG('#low', 'scores/low.svg');
+	// loadSVG('#med', 'scores/med.svg');
+
+	loadSVG('#scoresvg', 'scores/score-attr.svg');
 
 	loadSVG('#timelinesvg', 'timeline/timeline.svg');
 
 	loadSVG('#listsvg', 'lists/lists.svg');
 
-	svgInView('#score-anim');
-	svgInView('#timeline-anim');
-	svgInView('#lists-anim');
+	loadSVG('#tldrsvg', 'tldr/tldr.svg');
+	loadSVG('#longsvg', 'tldr/long.svg');
+
+	loadSVG('#businesssvg', 'business/business.svg');
+
+
+	/* Start SVG animations */
+	svgInView('#score-anim', 0);
+	svgInView('#timeline-anim', 0);
+	svgInView('#lists-anim', 0);
+	svgInView('#tldr-anim', 0);
+	svgInView('#business-anim', 350);
 }
 
 function loopfirstLoad() {
